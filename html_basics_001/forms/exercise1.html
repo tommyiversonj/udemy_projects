@@ -1,0 +1,42 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Checkout</h1>
+    <form action="">
+        <label for="payment">Payment Method</label>
+        <select name="payment" id="payment">
+            <option value="bank">Bank Transfer</option>
+            <option value="visa">Visa Card</option>
+            <option value="paypal">Paypal</option>
+        </select>
+
+        <fieldset>
+            <legend>Shipping Method</legend>
+            <div>
+                <input type="radio" id="two-day" name="size" value="two-day" />
+                <label for="small">Free - Two Day Shipping</label>
+            </div>
+            <div>
+                <input type="radio" id="standrd" name="size" value="m" />
+                <label for="standar">Free - Standard Shipping (4-5 Business Days)</label>
+            </div>
+            <div>
+                <input type="radio" id="large" name="size" value="l" />
+                <label for="large">Free - No Rush Shipping (5 Business Dyas)</label>
+            </div>
+        </fieldset>
+        <div>
+            <label for="gift">This is a gift</label>
+            <input type="checkbox" id="subscribe" name="subscribe" checked />
+        </div>
+        <button>Place Your Order</button>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flexbox Full Example</title>
+  <style>
+    /* Flex Container Properties */
+    .flex-container {
+      display: flex; /* Makes it a flex container */
+      flex-direction: row; /* Horizontal layout */
+      flex-wrap: wrap; /* Allows items to wrap */
+      justify-content: space-between; /* Distributes items horizontally */
+      align-items: center; /* Aligns items vertically */
+      align-content: space-around; /* Aligns wrapped rows */
+      height: 400px;
+      padding: 20px;
+      background-color: #f0f0f0;
+      border: 2px solid #ccc;
+    }
+
+    /* Flex Item Properties */
+    .flex-item {
+      background-color: #3498db;
+      color: white;
+      padding: 20px;
+      margin: 10px;
+      text-align: center;
+      border-radius: 8px;
+      width: 150px;
+      height: 100px;
+
+      /* These are individual flex item properties */
+      flex-grow: 1;    /* Grow to fill space */
+      flex-shrink: 1;  /* Shrink if needed */
+      flex-basis: 200px; /* Preferred width */
+      align-self: auto; /* Use container alignment */
+      order: 0;         /* Default order */
+    }
+
+    /* Custom variations to show differences */
+    .item-2 {
+      order: 1; /* Appears last */
+      flex-grow: 2; /* Grows more */
+    }
+
+    .item-3 {
+      align-self: flex-end; /* Overrides container alignment */
+      flex-basis: 100px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2 style="text-align:center;">Flexbox Full Demo</h2>
+
+  <div class="flex-container">
+    <div class="flex-item item-1">Item 1</div>
+    <div class="flex-item item-2">Item 2 (Order 1, Grow 2)</div>
+    <div class="flex-item item-3">Item 3 (Self-End)</div>
+    <div class="flex-item item-4">Item 4</div>
+    <div class="flex-item item-5">Item 5</div>
+  </div>
+
+</body>
+</html>

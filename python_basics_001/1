@@ -1,0 +1,6 @@
+# Ask the user for 2 integer numbers, add them and print
+
+a = int(input("First number: "))
+b = int(input("Second number: "))
+sum = a + b
+print(f"Your Name: {name} and Age: {int(age)}")

@@ -1,0 +1,79 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--Text Area-->
+    <h1>Other Form Control</h1>
+    <h2>Text Area</h2>
+    <form action="">
+        <label for="notes">Additional Notes: </label>
+        <textarea rows="10" cols="50" id="notes"></textarea>
+    </form>
+
+    <!--Checkbox-->
+    <h2>CheckBoxes</h2>
+    <div>
+        <form action="">
+            <input type="text" placeholder="username" />
+            <label for="subscribe">Subscribe to newsletter?</label>
+            <input type="checkbox" id="subscribe" name="subscribe" checked />
+            <button>Submit</button>
+    </div>
+    </form>
+
+    <!--Range-->
+    <h1>Range Input</h1>
+    <form action="">
+        <label for="volume">Select Volume</label>
+        <input type="range" id="volume" min="0" max="10" name="volume" value="0" />
+        <button>Submit</button>
+    </form>
+
+    <!--Select-->
+    <h2>Select</h2>
+    <form action="">
+        <label for="university-choice">Select Option</label>
+        <select name="university-choice" id="university-choice">
+            <option value="1">Level 1 - William V. S. Tubman University</option>
+            <option value="2">Level 2 -University of Liberia</option>
+            <option value="3" selected>Level 3 - None</option>
+        </select>
+        <button>Submit</button>
+    </form>
+
+    <!--Radio Button-->
+    <h2>Radio Button</h2>
+    <form action="">
+        <div>
+            <input type="radio" id="small" name="size"
+             value="s"/>
+            <label for="small">small</label>
+        </div>
+        <div>
+            <input type="radio" id="medium" name="size"
+             value="m"/>
+            <label for="medium">medium</label>
+        </div>
+        <div>
+            <input type="radio" id="large" name="size" 
+            value="l"/>
+            <label for="large">large</label>
+        </div>
+        <button>Submit</button>
+    </form>
+
+    <!--Other Input-->
+    <h2>Other Input Types</h2>
+    <form action="">
+        <input type="color" /> <br />
+        <input type="data" />
+    </form>
+
+</body>
+
+</html>
